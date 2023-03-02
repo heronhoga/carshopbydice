@@ -1,0 +1,38 @@
+.footer {
+  margin-top: 10vw;
+}
+
+.images {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.carbrands {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  width: 10vw;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  z-index: 1;
+
+  @supports not (aspect-ratio: 3/ 2) {
+    &::before {
+      float: left;
+      padding-top: 66.67%;
+      content: "";
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carbrands {
+    width: 15vw;
+  }
+}

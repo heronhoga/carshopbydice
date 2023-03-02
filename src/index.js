@@ -1,17 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+//WEB COMPONENTS
+import Webnav from "./carshopcomponents/webnav"; //NAVIGATION BAR
+import CarouselCar from "./carshopcomponents/CarouselCar"; //SLIDING CAR IMAGES
+import AboutUs from "./carshopcomponents/AboutUs";
+import AboutUsBanner from "./carshopcomponents/AboutUsBanner";
+import CarListsBanner from "./carshopcomponents/carListsBanner";
+import CarLists from "./carshopcomponents/CarLists";
+import SparepartsBanner from "./carshopcomponents/SparepartsBanner";
+import SparepartLists from "./carshopcomponents/SparepartLists";
+import Footer from "./carshopcomponents/Footer";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Webnav />
+    <CarouselCar />
+    <AboutUsBanner />
+    <AboutUs />
+    <CarListsBanner />
+    <CarLists />
+    <SparepartsBanner />
+    <SparepartLists />
+    <Footer />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

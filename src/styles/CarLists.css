@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap");
+
+.carsCard {
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+.carName {
+  text-align: center;
+  font-family: "Antonio", sans-serif;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.TextDesc {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 1.2vw;
+}
+
+@media screen and (max-width: 768px) {
+  .carName {
+    font-size: 6vw;
+  }
+  .TextDesc {
+    font-size: 3.5vw;
+  }
+}
